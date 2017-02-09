@@ -1,0 +1,38 @@
+Git config  --global user.name “minombre”  -?para poner configurar tu nombre.
+Git config  --global user.email “correo”  -?para poner configurar tu correo
+Git config  --global color.iu true  -?para poner configurar los colores
+Git config  --global --list ?para ver todas las configuraciones
+No pocisionamos en el proyecto y agremos el comando git init--li
+Git remote  add origin ligadelrepocitorio
+Git add index.htm  ? para agregar el archivo en el repositorio
+Git add -A  ? para agregar todos los archivos
+Git commit  -m “mensaje” guarda los cambios para identificarlos.
+Para enviarlo al repositorio remoto.
+Git push  origin master
+Git log ? Permite ver una lista de todos los cambios que se han dado copiamos el código hexadecimal
+Git checkout “hexadecimal número que se ven en log” ?Permite regresar a una versión anterior
+Git checkout “master”?permite regresar al último commit
+
+//borrar un commit  sin tocar el código para eso funciona soft
+Git reset  --soft numerohexadecimal 
+
+Si da error por direcciones largas:
+Git config  --global core.longpths true
+
+Ramas y fusiones
+//para agregar una rama
+Git branch tester
+//para movernos entre ramas.
+Git checkout  tester
+//Fusiones es para agregar datos de una rama a otra
+//primero nos situamos en master y  después agregamos:
+Git merge tester
+
+//para eliminar una rama de forma local
+Git branch -D tester
+
+//para eliminar una rama de forma remota
+Git push origin  :bugfixes
+//mostrar las ramas remotas 
+Git remote show origin
+
